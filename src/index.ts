@@ -16,13 +16,14 @@ const SERVER_PORT = 3002;
     .use(router.allowedMethods());
 
   app.listen(SERVER_PORT, async () => {
-    await sequelize .authenticate()
-        .then(() => {
-          console.log('Connection has been established successfully.');
-        })
-        .catch(err => {
-          console.error('Unable to connect to the database:', err);
-        });
+      await sequelize.sync();
+    // await sequelize .authenticate()
+    //     .then(() => {
+    //       console.log('Connection has been established successfully.');
+    //     })
+    //     .catch(err => {
+    //       console.error('Unable to connect to the database:', err);
+    //     });
   });
   console.log(`Server listening on http://localhost:${SERVER_PORT} ...`);
 })();
