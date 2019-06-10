@@ -7,24 +7,28 @@ exports.getAllUsers = async () => {
             login: "user1",
             email: "user1@mail.com",
             birthYear: 1993,
-            gender: "male"
+            gender: "male",
+            password: "123456",
         },
         {
             id: 2,
             login: "user2",
             email: "user2@mail.com",
-            gender: "female"
+            gender: "female",
+            password: "123456",
         },
         {
             id: 3,
             login: "user3",
             email: "user3@mail.com",
-            birthYear: 2001
+            birthYear: 2001,
+            password: "123456",
         },
         {
             id: 4,
             login: "user4",
             email: "user4@mail.com",
+            password: "123456",
         }
     ];
 };

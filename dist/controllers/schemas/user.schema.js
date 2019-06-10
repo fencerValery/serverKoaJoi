@@ -20,13 +20,18 @@ exports.UserSchema = Joi.object().keys({
     birthYear: Joi.number()
         .integer()
         .min(1900)
-        .max(2001)
+        .max(2101)
         .description("Year of birthday of user")
         .example(1999),
     gender: Joi.string()
         .strict()
         .only("male", "female")
         .description("User gender")
-        .example("male")
+        .example("male"),
+    password: Joi.string()
+        .min(6)
+        .required()
+        .description("User password min 6 symbols")
+        .example("secret"),
 });
 //# sourceMappingURL=user.schema.js.map
