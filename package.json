@@ -30,7 +30,9 @@
     "koa": "^2.7.0",
     "koa-bodyparser": "^4.2.1",
     "koa-joi-swagger-ts": "^1.0.18",
-    "koa-router": "^7.4.0"
+    "koa-router": "^7.4.0",
+    "mysql2": "^1.6.5",
+    "sequelize": "^5.8.8"
   },
   "devDependencies": {
     "typescript": "^3.4.5"
